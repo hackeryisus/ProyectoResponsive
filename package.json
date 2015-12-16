@@ -1,0 +1,18 @@
+{
+  "name": "proyecto-responsive",
+  "version": "1.0.0",
+  "description": "Este es un proyecto dirigido a aprender a trabajar paginas responsive con entornos de construccion automaticos",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jesus M. Hernandez",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-minify-css": "^1.2.2",
+    "gulp-stylus": "^2.1.1",
+    "gulp-webserver": "^0.9.1",
+    "nib": "^1.1.0"
+  }
+}
