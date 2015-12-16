@@ -1,7 +1,41 @@
 @import './normalize.css'
 @import './reset.styl'
 
-$background = #3ca9f9
+$black = #333333
+$white = #FAFAFA
 
 body
-  background-color $background
+  font-size 16px
+
+.header
+  background-color $black
+  color $white
+  height 64px
+  width 100%
+  position fixed
+  top 0
+  left 0
+  z-index 10
+
+  &-mobile
+    display flex
+
+  &-logo
+    order 1
+
+  &-btn-nav
+    order 2
+    border 0
+    border-radius 5px
+    background-color $black
+
+  &-menu-nav
+    background-color $black
+
+  &-menu-list
+    height 0
+    overflow hidden
+
+    $-item
+      a
+        text-decoration none
