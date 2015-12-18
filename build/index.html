@@ -9,11 +9,11 @@
   <header class="header" >
     <div class="header-mobile">
       <h1 class="header-logo" >Logo</h1>
-      <button class="header-btn-nav" >Menu</button>
+      <button id="btnMenu" class="header-btn-nav" >Menu</button>
     </div>
 
     <nav class="header-menu-nav">
-      <ul class="header-menu-list" >
+      <ul id="navbarMenu" class="header-menu-list" >
         <li class="header-menu-list-item"><a href="#">Inicio</a></li>
         <li class="header-menu-list-item"><a href="#">Acerca de</a></li>
         <li class="header-menu-list-item"><a href="#">Blog</a></li>
@@ -22,7 +22,57 @@
       </ul>
     </nav>
   </header>
-  <h1>Ejemplo de proyecto responsive utilizando entornos de construccion</h1>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo provident a fugit dolores, consequatur, architecto tempora numquam ab doloremque et dolore earum magni iure odit, culpa nisi, nobis in. Sunt.</p>
+
+  <script>
+    (function (){
+      var btnMenu = document.getElementById('btnMenu');
+      var navbarMenu = document.getElementById('navbarMenu');
+
+      btnMenu.addEventListener('click', onclickMenu);
+      function onclickMenu(){
+        navbarMenu.classList.toggle("header-menu-list--show");
+      };
+
+    }());
+
+  </script>
+
+  <article class="content">
+    <section class="content-text" >
+      <div class="video-container">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/NjXuN6YQTXs"
+          frameborder="0"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </section>
+
+    <section class="content-features">
+      <div class="content-block">
+        <h3 class="content-block-title">Feature 1</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda voluptatibus facere corporis repellendus nisi, delectus minus illum sequi amet accusamus eos necessitatibus molestias, voluptates, eveniet ea soluta illo autem mollitia!</p>
+      </div>
+      <div class="content-block">
+        <h3 class="content-block-title">Feature 2</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda voluptatibus facere corporis repellendus nisi, delectus minus illum sequi amet accusamus eos necessitatibus molestias, voluptates, eveniet ea soluta illo autem mollitia!</p>
+      </div>
+      <div class="content-block">
+        <h3 class="content-block-title">Feature 3</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda voluptatibus facere corporis repellendus nisi, delectus minus illum sequi amet accusamus eos necessitatibus molestias, voluptates, eveniet ea soluta illo autem mollitia!</p>
+      </div>
+      <div class="content-block">
+        <h3 class="content-block-title">Feature 4</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda voluptatibus facere corporis repellendus nisi, delectus minus illum sequi amet accusamus eos necessitatibus molestias, voluptates, eveniet ea soluta illo autem mollitia!</p>
+      </div>
+
+    </section>
+
+  </article>
+
+
+
 </body>
 </html>
