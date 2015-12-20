@@ -2,14 +2,15 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Proyecto Responsive</title>
+  <title>The Force Awakens</title>
   <link rel="stylesheet" href="./css/main.css">
+  <link rel="icon" type="image/png" href="http://img3.wikia.nocookie.net/__cb20100705204611/swfanon/images/0/00/Jedi_Order_Icon_VM.png">
 </head>
 <body>
   <header class="header" >
     <div class="header-mobile">
-      <h1 class="header-logo" >Logo</h1>
-      <button id="btnMenu" class="header-btn-nav" >Menu</button>
+      <h1 class="header-logo" >Star Wars</h1>
+      <button id="btnMenu" class="header-btn-nav" ><i class="fa fa-bars"></i></button>
     </div>
 
     <nav class="header-menu-nav">
@@ -23,19 +24,7 @@
     </nav>
   </header>
 
-  <script>
-    (function (){
-      var btnMenu = document.getElementById('btnMenu');
-      var navbarMenu = document.getElementById('navbarMenu');
 
-      btnMenu.addEventListener('click', onclickMenu);
-      function onclickMenu(){
-        navbarMenu.classList.toggle("header-menu-list--show");
-      };
-
-    }());
-
-  </script>
 
   <article class="content">
     <section class="content-text" >
@@ -43,7 +32,7 @@
         <iframe
           width="560"
           height="315"
-          src="https://www.youtube.com/embed/NjXuN6YQTXs"
+          src="https://www.youtube.com/embed/NUHIaL0QJpw"
           frameborder="0"
           allowfullscreen>
         </iframe>
@@ -67,12 +56,28 @@
         <h3 class="content-block-title">Feature 4</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda voluptatibus facere corporis repellendus nisi, delectus minus illum sequi amet accusamus eos necessitatibus molestias, voluptates, eveniet ea soluta illo autem mollitia!</p>
       </div>
+    </section>
+
+
+    <section class="content-text ">
+      <h3>The sunrise of a new hope</h3>
+      <div class="content-text-image" >
+        <picture>
+          <source media="(min-width: 768px)" srcset="img/desktop.jpg">
+          <source media="(min-width: 320px)" srcset="img/mobile.jpg">
+          <img src="img/mobile.jpg" alt="">
+        </picture>
+        <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel vero quisquam tempora, quos debitis ut aspernatur! Quam explicabo libero earum ad odio, modi labore unde iste culpa sit sunt dolorum.</span>
+        <span>Vero velit quos explicabo atque at nisi quas sapiente, ipsam esse a debitis perferendis consectetur aut, rerum, quod animi. Blanditiis ut sint sunt placeat ducimus, labore asperiores iusto odit deleniti.</span>
+        <span>Numquam magni rerum dolore dolores unde molestias laborum! Quis cupiditate ipsam, accusantium ea magni ipsum atque quaerat asperiores minus iusto beatae impedit debitis qui sed officiis sequi ad assumenda temporibus.</span>
+        <span>Vel at nemo perferendis eligendi sequi vero sed quaerat! Nulla modi temporibus fuga veniam possimus nemo aliquid quaerat non a assumenda aliquam suscipit natus, dolor sapiente doloribus! Atque, quae, illo?</span></p>
+      </div>
 
     </section>
 
   </article>
 
-
+  <script src="./js/bundle.js"></script>  
 
 </body>
 </html>

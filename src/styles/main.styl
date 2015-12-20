@@ -1,14 +1,17 @@
 @import './normalize.css'
 @import './reset.styl'
+@import './content.styl'
 
 $black = #333333
 $white = #FAFAFA
 
 body
   font-size 16px
+  font-family 'Lato', sans-serif
 
 .header
   background-color $black
+  font-family 'Montserrat', sans-serif
   color $white
   height 64px
   width 100%
@@ -17,6 +20,10 @@ body
   left 0
   z-index 10
   line-height 64px
+
+  &--light
+    background-color $white
+    color $black
 
   &-mobile
     display flex
